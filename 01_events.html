@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lovus - Wedding Website Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lovus is responsive wedding html website template">
+    <meta name="keywords" content="wedding,couple,ceremony,reception,rsvp,gallery,event,countdown">
+    <meta name="author" content="">
+
+
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+
+    <!-- CSS Files
+    ================================================== -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.countdown.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/animsition.min.css" type="text/css">
+
+    <!-- custom background -->
+    <link rel="stylesheet" href="css/bg.css" type="text/css">
+
+    <!-- color scheme -->
+    <link rel="stylesheet" href="css/color.css" type="text/css" id="colors">
+</head>
+
+<body class="page-event">
+
+    <div id="wrapper">
+        <!-- header begin -->
+        <header>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="index.html">
+                                <h2>Laurie<span>&amp;</span>Briant</h2>
+                            </a>
+                        </div>
+                        <!-- logo close -->
+
+                        <!-- small button begin -->
+                        <span id="menu-btn"></span>
+                        <!-- small button close -->
+
+                        <span class="btn-rsvp">RSVP</span>
+
+                        <!-- mainmenu begin -->
+                        <nav>
+                            <ul id="mainmenu">
+                                <li><a href="index.html">Home</a>
+                                    <ul>
+                                        <li><a href="index.html">Wedding 1</a></li>
+                                        <li><a href="01_index_2.html">Wedding 2</a></li>
+                                        <li><a href="01_index_3.html">Wedding 3</a></li>
+                                        <li><a href="02_index.html">Wedding Planner 1</a></li>
+                                        <li><a href="02_index_2.html">Wedding Planner 2</a></li>
+                                        <li><a href="02_index_3.html">Wedding Planner 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">About</a>
+                                    <ul>
+                                        <li><a href="01_about-her.html">About Her</a></li>
+                                        <li><a href="01_about-him.html">About Him</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="01_story.html">Story</a></li>
+                                <li><a href="01_events.html">Events</a></li>
+                                <li><a href="01_people.html">People</a></li>
+                                <li><a href="01_gallery.html">Gallery</a></li>
+                                <li><a href="01_journal.html">Journal</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <!-- mainmenu close -->
+
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+
+        <!-- subheader -->
+        <section id="subheader" class="dark no-top no-bottom" data-stellar-background-ratio=".2">
+            <div class="wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center fadeScroll relative" data-scroll-speed="2">
+                            <h2 data-scroll-speed="8">Events</h2>
+                            <div class="wm" data-scroll-speed="3">Date</div>
+                            <div class="spacer-double"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- subheader close -->
+
+        <!-- content begin -->
+        <div id="content" class="no-top no-bottom">
+
+            <!-- rsvp popup begin -->
+            <div id="popup-box" class="full-height">
+                <span class="btn-close">
+					<i class="icon_close"></i>
+				</span>
+
+                <div class="container center-y">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="deco id-color"><span>We Invite You</span></h2>
+                            <h2 data-wow-delay=".2s">Saturday, 25 November 2019</h2>
+                        </div>
+
+                        <div class="spacer-double"></div>
+
+                        <div class="col-md-5 col-md-offset-1 text-right">
+                            <h3>Wedding Ceremony</h3>
+                            13:00 PM - 14:00 PM<br> 100 Mainstreet Center, Sydney<br>
+                        </div>
+
+                        <div class="col-md-5">
+                            <h3>Wedding Reception</h3>
+                            14:00 PM - 16:00 PM<br> 100 Mainstreet Center, Sydney<br>
+                        </div>
+
+                        <div class="spacer-double"></div>
+
+                        <form name="rsvp" id='rsvp' class="form-underline" method="post" action="rsvp.php">
+
+                            <div class="col-md-3">
+                                <input type='text' name='name' id='name' class="form-control" placeholder="Your Name">
+                            </div>
+
+                            <div class="col-md-3">
+                                <input type='text' name='email' id='email' class="form-control" placeholder="Your Email">
+                            </div>
+
+                            <div class="col-md-3">
+                                <select id="guest" name="guest" size="1" class="form-control">
+								  <option value="" disabled selected>Guests</option>
+								  <option>1</option>
+								  <option>2</option>
+								  <option>3</option>
+								</select>
+                            </div>
+
+                            <div class="col-md-3">
+                                <select id="attend" name="attend" size="1" class="form-control">
+								  <option value="" disabled selected>Are you attending?</option>
+								  <option>yes</option>
+								  <option>no</option>
+								</select>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <div class="spacer-single"></div>
+                                <input type='submit' id='submit' value='Submit' class="btn btn-custom">
+								<div id='mail_success' class='success'>Your message has been sent successfully.</div>
+								<div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
+                            </div>
+
+                        </form>
+
+                        <div class="spacer-single"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- rsvp popup close -->
+
+            <!-- section begin -->
+            <section aria-label="section" class="no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="deco id-color"><span>You Are Invited</span></h2>
+                            <h2 data-wow-delay=".2s">Saturday, 25 November 2019</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <section id="section-event">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/misc/3.jpg" alt="" class="img-responsive img-rounded wow fadeInLeft">
+                        </div>
+
+                        <div class="col-md-5 col-md-offset-1 pt40 pb40 wow fadeIn" data-wow-delay=".5s">
+                            <h3>Wedding Ceremony</h3>
+                            Saturday, 25 November 2019<br> 13:00 PM - 14:00 PM<br> 100 Mainstreet Center, Sydney<br>
+                            <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&amp;hl=en&amp;t=v&amp;hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom"
+                                class="btn btn-custom mt30 popup-gmaps">View on map</a>
+                        </div>
+                    </div>
+
+                    <div class="spacer-double"></div>
+
+                    <div class="row">
+                        <div class="col-md-5 pt40 pb40 text-right wow fadeIn" data-wow-delay=".5s">
+                            <h3>Wedding Reception</h3>
+                            Saturday, 25 November 2019<br> 14:00 PM - 16:00 PM<br> 100 Mainstreet Center, Sydney<br>
+                            <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&amp;hl=en&amp;t=v&amp;hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom"
+                                class="btn btn-custom mt30 popup-gmaps">View on map</a>
+                        </div>
+
+                        <div class="col-md-6 col-md-offset-1">
+                            <img src="images/misc/4.jpg" alt="" class="img-responsive img-rounded wow fadeInRight">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <section id="section-countdown" aria-label="section-countdown" class="pt60 pb60 text-light" data-stellar-background-ratio=".2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3>Time left until event</h3>
+                        </div>
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="spacer-double"></div>
+                            <div id="defaultCountdown" class="wow fadeIn"></div>
+                            <div class="spacer-single"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+        </div>
+
+        <!-- footer begin -->
+        <footer>
+            <div class="container text-center text-light">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="hs1 wow fadeInUp">Laurie<span>&amp;</span>Briant</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subfooter">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            &copy; Copyright 2019 - Lovus by Designesia
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+
+        <a href="#" id="back-to-top"></a>
+        <div id="preloader">
+            <div class="preloader1"></div>
+        </div>
+    </div>
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/validation-rsvp.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/countdown-custom.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/designesia.js"></script>
+
+</body>
+
+</html>
