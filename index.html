@@ -408,12 +408,22 @@
 							var w = 37.531464;
 							var h = 126.990780;
 							
-							var mapOptions = {
-								    center: new naver.maps.LatLng(w, h),
-								    zoom: 16
-								};
+// 							var mapOptions = {
+// 								    center: new naver.maps.LatLng(w, h),
+// 								    zoom: 16
+// 								};
+							
+							var map = new naver.maps.Map('map', {
+							    center: new naver.maps.LatLng(w, h),
+							    zoom: 15
+							});
 
-								var map = new naver.maps.Map('map', mapOptions);
+							var marker = new naver.maps.Marker({
+							    position: new naver.maps.LatLng(w, h),
+							    map: map
+							});
+
+// 								var map = new naver.maps.Map('map', mapOptions);
 
 // 							//마커가 표시될 위치입니다 
 // 							var markerPosition = new kakao.maps.LatLng(w, h);
